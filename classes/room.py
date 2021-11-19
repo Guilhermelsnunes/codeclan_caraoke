@@ -1,5 +1,3 @@
-from classes.song import Song
-
 
 class Room:
     def __init__(self, name, capacity):
@@ -24,12 +22,9 @@ class Room:
         self.song_list.append(song)
 
     def song_count(self):
-        return len(self.guest_list)
+        return len(self.song_list)
 
-
-
-# no need to remove songs 
-#    def remove_song(self, song):
-#        self.song_list.remove(song)
+    def remove_song(self, song):
+        self.song_list.remove(song)
 
 
